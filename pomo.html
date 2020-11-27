@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PomoDoro</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="user-session">
+        <h1>The Pomodoro App</h1>
+        <label>Minutes for work:-</label>
+        <input type="number" id="work_time" /><br /><br />
+        <label>Minutes for break:-</label>
+        <input type="number" id="break_time" />
+      </div>
+    </div>
+    <div class="buttons-session">
+      <button id="set-timer">Set timer</button>
+      <button id="reset-timer">Reset</button>
+    </div>
+    <br /><br />
+    <div
+      class="display-session"
+      style="border: 0.5px solid black; height: 30vh"
+    ></div>
+    <br />
+    <div class="clock-action">
+      <button id="timer-start">Start</button>
+      <button id="timer-pause">Pause</button>
+      <button id="timer-reset">Reset</button>
+      <!-- <button id="timer-stop">Stop</button> -->
+    </div>
+    <script src="./src/pomo.js"></script>
+  </body>
+</html>
