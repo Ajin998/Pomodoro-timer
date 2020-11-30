@@ -20,7 +20,9 @@ var root = document.querySelector(".display-session");
 document.getElementById("set-timer").addEventListener("click", () => {
   if (
     document.getElementById("work_time").value !== "" &&
-    document.getElementById("break_time").value !== ""
+    document.getElementById("break_time").value !== "" &&
+    document.getElementById("work_time").value >= 0 &&
+    document.getElementById("break_time").value >= 0
   ) {
     min_work = document.getElementById("work_time").value;
     min_break = document.getElementById("break_time").value;
@@ -39,7 +41,7 @@ document.getElementById("set-timer").addEventListener("click", () => {
     document.getElementById("work_time").value = "";
     document.getElementById("break_time").value = "";
   } else {
-    alert("Empty Timer value not allowed");
+    alert("Enter Valid Time!!");
   }
 });
 // ------------------------------------------------------------------------------------
